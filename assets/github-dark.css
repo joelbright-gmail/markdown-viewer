@@ -1,0 +1,273 @@
+/* GitHub Dark Theme for Markdown */
+/* Based on GitHub's dark mode color scheme */
+
+:root {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-tertiary: #21262d;
+    --border-primary: #30363d;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --text-link: #58a6ff;
+    --text-link-hover: #79c0ff;
+    --code-bg: #161b22;
+    --code-border: #30363d;
+    --blockquote-border: #3b434b;
+    --table-border: #30363d;
+    --table-header-bg: #161b22;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--text-primary);
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.875em;
+}
+
+h6 {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+/* Links */
+a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-link-hover);
+    text-decoration: underline;
+}
+
+/* Paragraphs */
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* Lists */
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+}
+
+li+li {
+    margin-top: 0.25em;
+}
+
+/* Code */
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    border: 1px solid var(--code-border);
+}
+
+pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    background-color: transparent;
+    border: 0;
+}
+
+/* Blockquotes */
+blockquote {
+    margin: 0 0 16px 0;
+    padding: 0 1em;
+    color: var(--text-secondary);
+    border-left: 0.25em solid var(--blockquote-border);
+}
+
+blockquote> :first-child {
+    margin-top: 0;
+}
+
+blockquote> :last-child {
+    margin-bottom: 0;
+}
+
+/* Tables */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    overflow: auto;
+}
+
+table th {
+    font-weight: 600;
+    padding: 6px 13px;
+    border: 1px solid var(--table-border);
+    background-color: var(--table-header-bg);
+}
+
+table td {
+    padding: 6px 13px;
+    border: 1px solid var(--table-border);
+}
+
+table tr {
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--table-border);
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--bg-secondary);
+}
+
+/* Horizontal Rule */
+hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: var(--border-primary);
+    border: 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: var(--bg-primary);
+}
+
+/* Task Lists */
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+/* Syntax Highlighting (basic) */
+.sourceCode .kw {
+    color: #ff7b72;
+}
+
+/* Keyword */
+.sourceCode .dt {
+    color: #79c0ff;
+}
+
+/* DataType */
+.sourceCode .dv {
+    color: #79c0ff;
+}
+
+/* DecVal */
+.sourceCode .bn {
+    color: #79c0ff;
+}
+
+/* BaseN */
+.sourceCode .fl {
+    color: #79c0ff;
+}
+
+/* Float */
+.sourceCode .ch {
+    color: #a5d6ff;
+}
+
+/* Char */
+.sourceCode .st {
+    color: #a5d6ff;
+}
+
+/* String */
+.sourceCode .co {
+    color: #8b949e;
+    font-style: italic;
+}
+
+/* Comment */
+.sourceCode .ot {
+    color: #d2a8ff;
+}
+
+/* Other */
+.sourceCode .fu {
+    color: #d2a8ff;
+}
+
+/* Function */
+.sourceCode .va {
+    color: #ffa657;
+}
+
+/* Variable */
+.sourceCode .cf {
+    color: #ff7b72;
+}
+
+/* ControlFlow */
+.sourceCode .op {
+    color: #ff7b72;
+}
+
+/* Operator */
+
+/* Made with Bob */

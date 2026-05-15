@@ -1,0 +1,279 @@
+/* Monokai Theme for Markdown */
+/* Vibrant, fun theme inspired by Sublime Text's Monokai */
+
+:root {
+    --bg-primary: #272822;
+    --bg-secondary: #3e3d32;
+    --bg-tertiary: #49483e;
+    --border-primary: #75715e;
+    --text-primary: #f8f8f2;
+    --text-secondary: #75715e;
+    --text-link: #66d9ef;
+    --text-link-hover: #a6e22e;
+    --code-bg: #3e3d32;
+    --code-border: #75715e;
+    --blockquote-border: #ae81ff;
+    --table-border: #75715e;
+    --table-header-bg: #3e3d32;
+    --monokai-red: #f92672;
+    --monokai-orange: #fd971f;
+    --monokai-yellow: #e6db74;
+    --monokai-green: #a6e22e;
+    --monokai-cyan: #66d9ef;
+    --monokai-purple: #ae81ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--monokai-red);
+    color: var(--monokai-red);
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--monokai-orange);
+    color: var(--monokai-orange);
+}
+
+h3 {
+    font-size: 1.25em;
+    color: var(--monokai-yellow);
+}
+
+h4 {
+    font-size: 1em;
+    color: var(--monokai-green);
+}
+
+h5 {
+    font-size: 0.875em;
+    color: var(--monokai-cyan);
+}
+
+h6 {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-link-hover);
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+}
+
+li+li {
+    margin-top: 0.25em;
+}
+
+strong {
+    color: var(--monokai-orange);
+    font-weight: 700;
+}
+
+em {
+    color: var(--monokai-yellow);
+    font-style: italic;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    color: var(--monokai-green);
+}
+
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    border: 1px solid var(--code-border);
+}
+
+pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    background-color: transparent;
+    border: 0;
+    color: var(--text-primary);
+}
+
+blockquote {
+    margin: 0 0 16px 0;
+    padding: 0 1em;
+    color: var(--text-primary);
+    border-left: 0.25em solid var(--blockquote-border);
+    background-color: rgba(174, 129, 255, 0.1);
+}
+
+blockquote> :first-child {
+    margin-top: 0;
+}
+
+blockquote> :last-child {
+    margin-bottom: 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    overflow: auto;
+}
+
+table th {
+    font-weight: 600;
+    padding: 6px 13px;
+    border: 1px solid var(--table-border);
+    background-color: var(--table-header-bg);
+    color: var(--monokai-cyan);
+}
+
+table td {
+    padding: 6px 13px;
+    border: 1px solid var(--table-border);
+}
+
+table tr {
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--table-border);
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--bg-secondary);
+}
+
+hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background: linear-gradient(90deg,
+            var(--monokai-red),
+            var(--monokai-orange),
+            var(--monokai-yellow),
+            var(--monokai-green),
+            var(--monokai-cyan),
+            var(--monokai-purple));
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: var(--bg-primary);
+    border-radius: 6px;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.sourceCode .kw {
+    color: var(--monokai-red);
+}
+
+.sourceCode .dt {
+    color: var(--monokai-cyan);
+}
+
+.sourceCode .dv {
+    color: var(--monokai-purple);
+}
+
+.sourceCode .bn {
+    color: var(--monokai-purple);
+}
+
+.sourceCode .fl {
+    color: var(--monokai-purple);
+}
+
+.sourceCode .ch {
+    color: var(--monokai-yellow);
+}
+
+.sourceCode .st {
+    color: var(--monokai-yellow);
+}
+
+.sourceCode .co {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.sourceCode .ot {
+    color: var(--monokai-cyan);
+}
+
+.sourceCode .fu {
+    color: var(--monokai-green);
+}
+
+.sourceCode .va {
+    color: var(--text-primary);
+}
+
+.sourceCode .cf {
+    color: var(--monokai-red);
+}
+
+.sourceCode .op {
+    color: var(--monokai-red);
+}
+
+/* Made with Bob */
