@@ -595,7 +595,9 @@ Feel free to:
 
 ## License
 
-Free to use and modify for personal and commercial projects.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**TL;DR:** Free to use, modify, and distribute for personal and commercial projects. Attribution required.
 
 ## Credits
 
