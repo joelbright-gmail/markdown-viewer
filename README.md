@@ -1,6 +1,13 @@
-# Markdown Viewer with Multiple Themes
+# Linuv - Markdown Viewer with Multiple Themes
 
 A simple, elegant tool to convert Markdown files to styled HTML and view them in your browser with 8 beautiful themes to choose from.
+
+**Now available as extensions!** 🎉
+- 📦 [VSCode Extension](vscode-extension/) - Preview markdown in Visual Studio Code
+- 🌐 [Chrome Extension](chrome-extension/) - View local .md files in Chrome
+- 📖 [Extensions Guide](.docs/EXTENSIONS.md) - Complete setup and usage guide
+
+---
 
 ## Features
 
@@ -17,6 +24,16 @@ A simple, elegant tool to convert Markdown files to styled HTML and view them in
 🔗 **Symlink-Friendly**: Works correctly when installed system-wide via symlink
 🔗 **Fixed Internal Links**: Table of contents and anchor links work perfectly
 ⚡ **HTML Entity Decoding**: Properly handles special characters in diagrams
+
+## Available Formats
+
+| Format | Best For | Features |
+|--------|----------|----------|
+| **CLI Tool** | Production exports, batch processing | Full Pandoc, automated PDF, Git integration |
+| **VSCode Extension** | Live editing and preview | Real-time preview, side-by-side editing |
+| **Chrome Extension** | Quick viewing | Instant rendering, print to PDF |
+
+See [Extensions Guide](.docs/EXTENSIONS.md) for detailed comparison and setup instructions.
 
 ## Recent Updates
 
@@ -587,11 +604,15 @@ Feel free to:
 - [x] ~~Theme-aware Mermaid diagram styling~~ ✅ v2.1.0
 - [x] ~~PDF export option~~ ✅ v2.1.0
 - [x] ~~Syntax highlighting for code blocks~~ ✅ v2.1.0
+- [x] ~~VSCode Extension~~ ✅ v3.0.0
+- [x] ~~Chrome Extension~~ ✅ v3.0.0
 - [ ] Watch mode for auto-regeneration
 - [ ] Custom output directory configuration
 - [ ] Table of contents auto-generation
 - [ ] Custom CSS injection
 - [ ] Batch conversion with progress bar
+- [ ] Firefox Extension
+- [ ] Edge Extension
 
 ## License
 

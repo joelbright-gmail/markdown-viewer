@@ -2,6 +2,9 @@
 html/
 pdf/
 
+# Documentation (reference files)
+.docs/
+
 # Vendor files (can be regenerated with setup-offline.sh)
 vendor/
 

@@ -1,0 +1,113 @@
+{
+    "name": "linuv-markdown-viewer",
+    "displayName": "Linuv Markdown Viewer",
+    "description": "Beautiful markdown preview with 8 themes, Mermaid diagrams, and syntax highlighting",
+    "version": "1.0.0",
+    "publisher": "linuv",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Formatters",
+        "Other"
+    ],
+    "keywords": [
+        "markdown",
+        "preview",
+        "mermaid",
+        "themes",
+        "viewer"
+    ],
+    "activationEvents": [
+        "onLanguage:markdown"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "linuv.previewMarkdown",
+                "title": "Linuv: Preview Markdown",
+                "icon": "$(open-preview)"
+            },
+            {
+                "command": "linuv.changeTheme",
+                "title": "Linuv: Change Theme"
+            },
+            {
+                "command": "linuv.exportPDF",
+                "title": "Linuv: Export as PDF"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "linuv.previewMarkdown",
+                    "when": "editorLangId == markdown",
+                    "group": "navigation"
+                }
+            ],
+            "editor/context": [
+                {
+                    "command": "linuv.previewMarkdown",
+                    "when": "editorLangId == markdown",
+                    "group": "linuv"
+                },
+                {
+                    "command": "linuv.changeTheme",
+                    "when": "editorLangId == markdown",
+                    "group": "linuv"
+                },
+                {
+                    "command": "linuv.exportPDF",
+                    "when": "editorLangId == markdown",
+                    "group": "linuv"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "Linuv Markdown Viewer",
+            "properties": {
+                "linuv.theme": {
+                    "type": "string",
+                    "default": "github-dark",
+                    "enum": [
+                        "github-dark",
+                        "github-light",
+                        "solarized-dark",
+                        "solarized-light",
+                        "nord",
+                        "dracula",
+                        "monokai",
+                        "high-contrast"
+                    ],
+                    "description": "Default theme for markdown preview"
+                },
+                "linuv.autoPreview": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Automatically open preview when opening markdown files"
+                },
+                "linuv.offlineMode": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Use local vendor files instead of CDN"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "package": "vsce package",
+        "vscode:prepublish": "echo 'Ready to package'",
+        "compile": "echo 'No compilation needed'"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.74.0",
+        "@vscode/vsce": "^2.22.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/linuv.git"
+    },
+    "license": "MIT"
+}

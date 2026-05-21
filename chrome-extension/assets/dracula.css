@@ -1,0 +1,274 @@
+/* Dracula Theme for Markdown */
+/* Fun, vibrant dark theme with purple accents */
+
+:root {
+    --bg-primary: #282a36;
+    --bg-secondary: #44475a;
+    --bg-tertiary: #44475a;
+    --border-primary: #6272a4;
+    --text-primary: #f8f8f2;
+    --text-secondary: #6272a4;
+    --text-link: #8be9fd;
+    --text-link-hover: #50fa7b;
+    --code-bg: #44475a;
+    --code-border: #6272a4;
+    --blockquote-border: #bd93f9;
+    --table-border: #6272a4;
+    --table-header-bg: #44475a;
+    --accent-cyan: #8be9fd;
+    --accent-green: #50fa7b;
+    --accent-orange: #ffb86c;
+    --accent-pink: #ff79c6;
+    --accent-purple: #bd93f9;
+    --accent-red: #ff5555;
+    --accent-yellow: #f1fa8c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--accent-purple);
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--accent-purple);
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--accent-purple);
+    color: var(--accent-pink);
+}
+
+h3 {
+    font-size: 1.25em;
+    color: var(--accent-cyan);
+}
+
+h4 {
+    font-size: 1em;
+    color: var(--accent-green);
+}
+
+h5 {
+    font-size: 0.875em;
+    color: var(--accent-yellow);
+}
+
+h6 {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-link-hover);
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+}
+
+li+li {
+    margin-top: 0.25em;
+}
+
+strong {
+    color: var(--accent-orange);
+    font-weight: 700;
+}
+
+em {
+    color: var(--accent-yellow);
+    font-style: italic;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    color: var(--accent-pink);
+}
+
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    border: 1px solid var(--code-border);
+}
+
+pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    background-color: transparent;
+    border: 0;
+    color: var(--text-primary);
+}
+
+blockquote {
+    margin: 0 0 16px 0;
+    padding: 0 1em;
+    color: var(--text-primary);
+    border-left: 0.25em solid var(--blockquote-border);
+    background-color: rgba(189, 147, 249, 0.1);
+}
+
+blockquote> :first-child {
+    margin-top: 0;
+}
+
+blockquote> :last-child {
+    margin-bottom: 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    overflow: auto;
+}
+
+table th {
+    font-weight: 600;
+    padding: 6px 13px;
+    border: 1px solid var(--table-border);
+    background-color: var(--table-header-bg);
+    color: var(--accent-purple);
+}
+
+table td {
+    padding: 6px 13px;
+    border: 1px solid var(--table-border);
+}
+
+table tr {
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--table-border);
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--bg-secondary);
+}
+
+hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-pink), var(--accent-cyan));
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: var(--bg-primary);
+    border-radius: 6px;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.sourceCode .kw {
+    color: var(--accent-pink);
+}
+
+.sourceCode .dt {
+    color: var(--accent-cyan);
+}
+
+.sourceCode .dv {
+    color: var(--accent-purple);
+}
+
+.sourceCode .bn {
+    color: var(--accent-purple);
+}
+
+.sourceCode .fl {
+    color: var(--accent-purple);
+}
+
+.sourceCode .ch {
+    color: var(--accent-yellow);
+}
+
+.sourceCode .st {
+    color: var(--accent-yellow);
+}
+
+.sourceCode .co {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.sourceCode .ot {
+    color: var(--accent-cyan);
+}
+
+.sourceCode .fu {
+    color: var(--accent-green);
+}
+
+.sourceCode .va {
+    color: var(--text-primary);
+}
+
+.sourceCode .cf {
+    color: var(--accent-pink);
+}
+
+.sourceCode .op {
+    color: var(--accent-pink);
+}
+
+/* Made with Bob */

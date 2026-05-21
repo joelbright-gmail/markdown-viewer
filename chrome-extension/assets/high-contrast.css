@@ -1,0 +1,279 @@
+/* High Contrast Theme for Markdown */
+/* Maximum readability with strong contrast */
+
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #1a1a1a;
+    --bg-tertiary: #1a1a1a;
+    --border-primary: #ffffff;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-link: #00ffff;
+    --text-link-hover: #00ccff;
+    --code-bg: #1a1a1a;
+    --code-border: #ffffff;
+    --blockquote-border: #ffff00;
+    --table-border: #ffffff;
+    --table-header-bg: #333333;
+    --accent-yellow: #ffff00;
+    --accent-green: #00ff00;
+    --accent-cyan: #00ffff;
+    --accent-magenta: #ff00ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--accent-yellow);
+}
+
+h1 {
+    font-size: 2.2em;
+    padding-bottom: 0.3em;
+    border-bottom: 3px solid var(--border-primary);
+}
+
+h2 {
+    font-size: 1.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--border-primary);
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--text-link);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--text-link-hover);
+    text-decoration: underline;
+    background-color: var(--bg-secondary);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+}
+
+li+li {
+    margin-top: 0.5em;
+}
+
+strong {
+    font-weight: 700;
+    color: var(--accent-yellow);
+}
+
+em {
+    font-style: italic;
+    color: var(--accent-cyan);
+}
+
+code {
+    padding: 0.3em 0.5em;
+    margin: 0;
+    font-size: 90%;
+    background-color: var(--code-bg);
+    border: 2px solid var(--code-border);
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+pre {
+    padding: 20px;
+    overflow: auto;
+    font-size: 90%;
+    line-height: 1.6;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    border: 2px solid var(--code-border);
+}
+
+pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    background-color: transparent;
+    border: 0;
+    color: var(--text-primary);
+}
+
+blockquote {
+    margin: 0 0 16px 0;
+    padding: 0 1em;
+    color: var(--text-primary);
+    border-left: 0.4em solid var(--blockquote-border);
+    background-color: var(--bg-secondary);
+    font-weight: 500;
+}
+
+blockquote> :first-child {
+    margin-top: 0;
+}
+
+blockquote> :last-child {
+    margin-bottom: 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    overflow: auto;
+    border: 2px solid var(--table-border);
+}
+
+table th {
+    font-weight: 700;
+    padding: 10px 15px;
+    border: 2px solid var(--table-border);
+    background-color: var(--table-header-bg);
+    color: var(--accent-yellow);
+}
+
+table td {
+    padding: 10px 15px;
+    border: 2px solid var(--table-border);
+}
+
+table tr {
+    background-color: var(--bg-primary);
+    border-top: 2px solid var(--table-border);
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--bg-secondary);
+}
+
+hr {
+    height: 0.3em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: var(--border-primary);
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: var(--bg-primary);
+    border: 2px solid var(--border-primary);
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+    width: 18px;
+    height: 18px;
+}
+
+.sourceCode .kw {
+    color: var(--accent-magenta);
+    font-weight: 700;
+}
+
+.sourceCode .dt {
+    color: var(--accent-yellow);
+    font-weight: 700;
+}
+
+.sourceCode .dv {
+    color: var(--accent-cyan);
+}
+
+.sourceCode .bn {
+    color: var(--accent-cyan);
+}
+
+.sourceCode .fl {
+    color: var(--accent-cyan);
+}
+
+.sourceCode .ch {
+    color: var(--accent-green);
+}
+
+.sourceCode .st {
+    color: var(--accent-green);
+}
+
+.sourceCode .co {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.sourceCode .ot {
+    color: var(--accent-cyan);
+}
+
+.sourceCode .fu {
+    color: var(--accent-yellow);
+    font-weight: 700;
+}
+
+.sourceCode .va {
+    color: var(--text-primary);
+}
+
+.sourceCode .cf {
+    color: var(--accent-magenta);
+    font-weight: 700;
+}
+
+.sourceCode .op {
+    color: var(--text-primary);
+}
+
+/* Made with Bob */

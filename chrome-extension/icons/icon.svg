@@ -1,0 +1,12 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" rx="20" fill="#0d1117"/>
+  
+  <!-- Markdown "M" symbol -->
+  <path d="M 30 40 L 30 88 L 42 88 L 42 58 L 54 70 L 66 58 L 66 88 L 78 88 L 78 40 L 66 40 L 54 52 L 42 40 Z" fill="#58a6ff"/>
+  
+  <!-- Down arrow (markdown symbol) -->
+  <path d="M 88 50 L 88 78 L 82 78 L 94 90 L 106 78 L 100 78 L 100 50 Z" fill="#58a6ff"/>
+</svg>
+
+<!-- Made with Bob -->

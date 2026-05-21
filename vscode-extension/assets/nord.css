@@ -1,0 +1,272 @@
+/* Nord Theme for Markdown */
+/* Cool, arctic-inspired color palette */
+
+:root {
+    --bg-primary: #2e3440;
+    --bg-secondary: #3b4252;
+    --bg-tertiary: #434c5e;
+    --border-primary: #4c566a;
+    --text-primary: #eceff4;
+    --text-secondary: #d8dee9;
+    --text-link: #88c0d0;
+    --text-link-hover: #8fbcbb;
+    --code-bg: #3b4252;
+    --code-border: #4c566a;
+    --blockquote-border: #5e81ac;
+    --table-border: #4c566a;
+    --table-header-bg: #3b4252;
+    --nord-frost-1: #8fbcbb;
+    --nord-frost-2: #88c0d0;
+    --nord-frost-3: #81a1c1;
+    --nord-frost-4: #5e81ac;
+    --nord-aurora-1: #bf616a;
+    --nord-aurora-2: #d08770;
+    --nord-aurora-3: #ebcb8b;
+    --nord-aurora-4: #a3be8c;
+    --nord-aurora-5: #b48ead;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--nord-frost-2);
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--nord-frost-4);
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--nord-frost-4);
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.875em;
+}
+
+h6 {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-link-hover);
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+}
+
+li+li {
+    margin-top: 0.25em;
+}
+
+strong {
+    color: var(--nord-aurora-3);
+    font-weight: 700;
+}
+
+em {
+    color: var(--nord-frost-1);
+    font-style: italic;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    color: var(--nord-aurora-4);
+}
+
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    border: 1px solid var(--code-border);
+}
+
+pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    background-color: transparent;
+    border: 0;
+    color: var(--text-primary);
+}
+
+blockquote {
+    margin: 0 0 16px 0;
+    padding: 0 1em;
+    color: var(--text-secondary);
+    border-left: 0.25em solid var(--blockquote-border);
+    background-color: rgba(94, 129, 172, 0.1);
+}
+
+blockquote> :first-child {
+    margin-top: 0;
+}
+
+blockquote> :last-child {
+    margin-bottom: 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    overflow: auto;
+}
+
+table th {
+    font-weight: 600;
+    padding: 6px 13px;
+    border: 1px solid var(--table-border);
+    background-color: var(--table-header-bg);
+    color: var(--nord-frost-2);
+}
+
+table td {
+    padding: 6px 13px;
+    border: 1px solid var(--table-border);
+}
+
+table tr {
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--table-border);
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--bg-secondary);
+}
+
+hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: var(--border-primary);
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: var(--bg-primary);
+    border-radius: 6px;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.sourceCode .kw {
+    color: var(--nord-frost-4);
+}
+
+.sourceCode .dt {
+    color: var(--nord-frost-2);
+}
+
+.sourceCode .dv {
+    color: var(--nord-aurora-5);
+}
+
+.sourceCode .bn {
+    color: var(--nord-aurora-5);
+}
+
+.sourceCode .fl {
+    color: var(--nord-aurora-5);
+}
+
+.sourceCode .ch {
+    color: var(--nord-aurora-4);
+}
+
+.sourceCode .st {
+    color: var(--nord-aurora-4);
+}
+
+.sourceCode .co {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.sourceCode .ot {
+    color: var(--nord-frost-1);
+}
+
+.sourceCode .fu {
+    color: var(--nord-frost-2);
+}
+
+.sourceCode .va {
+    color: var(--text-primary);
+}
+
+.sourceCode .cf {
+    color: var(--nord-frost-4);
+}
+
+.sourceCode .op {
+    color: var(--nord-frost-3);
+}
+
+/* Made with Bob */
